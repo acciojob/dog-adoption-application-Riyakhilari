@@ -1,42 +1,38 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-<div>
-	<h1>Dog Adoption Appliction</h1>
-	<form action= "/submit-application" method ="post">
-		<label for="name">Name</label> 
-		<input id="name" name="Name" type="text" placeholder="Name" required>
+    <div>
+        <h1>Dog Adoption Application</h1>
+        <form action="/submit-application" method="post">
+            <label for="name">Name</label>
+            <input id="name" name="Name" type="text" placeholder="Name" required>
 
-		<label for="phone">Phone Number	</label>
-		<input id="phone" name="Name" type="text" placeholder="Phone Number" required>
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="Phone" type="text" placeholder="Phone Number" required>
 
-		<label for="add">Address 	</label>
-		<input id="address" name="Name" type="text" placeholder="Address" required>
+            <label for="address">Address</label>
+            <input id="address" name="Address" type="text" placeholder="Address" required>
 
-		<label for="Have ">Have you ever lived with a Dog before?</label>
-		<input id="checkbox" type="checkbox" value="yes" required >
+            <label for="checkbox">Have you ever lived with a Dog before?</label>
+            <input id="checkbox" type="checkbox" value="yes" required>
 
-		<label for="Select">Please select your preferred breeds</label>
-		<select id="multiSelect" type="select" >
-		<option>1</option>
-		<option>2</option>
-		<option>3</option>
-		</select>
+            <label for="multiSelect">Please select your preferred breeds</label>
+            <select id="multiSelect" multiple>
+                <option value="1">Breed 1</option>
+                <option value="2">Breed 2</option>
+                <option value="3">Breed 3</option>
+            </select>
 
-		<input type="submit" value="Submit" id="submit">
-	
-	</form>
-		
-</div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
